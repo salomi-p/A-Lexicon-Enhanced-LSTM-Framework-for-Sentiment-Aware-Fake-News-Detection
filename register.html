@@ -1,0 +1,170 @@
+<html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Fake News</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../static/vendors/feather/feather.css">
+  <link rel="stylesheet" href="../static/vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../static/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../static/css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../static/images/favicon.png" />
+  <script language="javascript">
+function validate()
+{
+	if(document.form1.name.value=="")
+	{
+	alert("Enter the Name");
+	document.form1.name.focus();
+	return false;
+	}
+	if(document.form1.address.value=="")
+	{
+	alert("Enter the Address");
+	document.form1.address.focus();
+	return false;
+	}
+	if(document.form1.mobile.value=="")
+	{
+	alert("Enter the Mobile No.");
+	document.form1.mobile.focus();
+	return false;
+	}
+	if(isNaN(document.form1.mobile.value))
+	{
+	alert("Invalid Mobile No.");
+	document.form1.mobile.select();
+	return false;
+	}
+	if(document.form1.mobile.value.length!=10)
+	{
+	alert("Mobile No. must be 10 digits!");
+	document.form1.mobile.select();
+	return false;
+	}
+	if(document.form1.email.value=="")
+	{
+	alert("Enter the Email");
+	document.form1.email.focus();
+	return false;
+	}
+	if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.form1.email.value))  
+	{
+	
+	}
+	else
+	{
+	alert("Invalid E-mail!");
+	document.form1.email.select();
+	return false;
+	}
+	if(document.form1.uname.value=="")
+	{
+	alert("Enter the Username");
+	document.form1.uname.focus();
+	return false;
+	}
+	if(document.form1.pass.value=="")
+	{
+	alert("Enter the Password");
+	document.form1.pass.focus();
+	return false;
+	}
+	if(document.form1.cpass.value=="")
+	{
+	alert("Enter the Confirm Password");
+	document.form1.cpass.focus();
+	return false;
+	}
+	if(document.form1.pass.value!=document.form1.cpass.value)
+	{
+	alert("Password does not match!");
+	document.form1.cpass.select();
+	return false;
+	}
+return true;
+}
+</script>
+
+</head>
+
+<body>
+  <div class="container-scroller">
+    <div class="container-fluid page-body-wrapper full-page-wrapper">
+      <div class="content-wrapper d-flex align-items-center auth px-0">
+        <div class="row w-100 mx-0">
+          <div class="col-lg-4 mx-auto">
+            <div class="auth-form-light text-left py-5 px-4 px-sm-5">
+              <div class="brand-logo">
+              <h3> Fake News</h3>
+              </div>
+              <h4>New here?</h4>
+              <h6 class="font-weight-light">Sign up</h6>
+              <form class="pt-3" method="post">
+			  	<div class="form-group">
+                  <input type="text" name="name" class="form-control form-control-lg" placeholder="Name" required>
+                </div>
+				<div class="form-group">
+                  <input type="text" name="mobile" class="form-control form-control-lg" maxlength="10" placeholder="Mobile No." required>
+                </div>
+				<div class="form-group">
+                  <input type="text" name="email" class="form-control form-control-lg" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="uname" class="form-control form-control-lg" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                  <input type="password" name="pass" class="form-control form-control-lg" placeholder="Password" required>
+                </div>
+				<div class="form-group">
+                  <input type="password" name="cpass" class="form-control form-control-lg" placeholder="Confirm Password" required>
+                </div>
+                <div class="mt-3">
+                  <input type="submit" name="btn" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" value="SIGN UP" onClick="return validate()">
+                </div>
+                <div class="my-2 d-flex justify-content-between align-items-center">
+                  <!--<div class="form-check">
+                    <label class="form-check-label text-muted">
+                      <input type="checkbox" class="form-check-input">
+                      Keep me signed in
+                    </label>
+                  </div>-->
+                 <a href="/" class="auth-link text-black">Home</a>
+                </div>
+               <!-- <div class="mb-2">
+                  <button type="button" class="btn btn-block btn-facebook auth-form-btn">
+                    <i class="ti-facebook mr-2"></i>Connect using facebook
+                  </button>
+                </div>-->
+                
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- content-wrapper ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="../static/vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="../static/js/off-canvas.js"></script>
+  <script src="../static/js/hoverable-collapse.js"></script>
+  <script src="../static/js/template.js"></script>
+  <script src="../static/js/settings.js"></script>
+  <script src="../static/js/todolist.js"></script>
+  <!-- endinject -->
+</body>
+
+</html>
