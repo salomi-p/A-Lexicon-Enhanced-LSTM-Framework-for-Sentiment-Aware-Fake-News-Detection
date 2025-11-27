@@ -9,3 +9,4 @@ gensim==4.3.1
 wordcloud==1.9.2
 Pillow==9.5.0
 werkzeug==2.3.0
+gunicorn==21.2.0
